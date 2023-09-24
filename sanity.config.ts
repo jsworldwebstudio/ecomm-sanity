@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'gameshop',
 
-  projectId: 'np36f0jn',
-  dataset: 'production',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID as string,
+  dataset: process.env.SANITY_STUDIO_DATASET as string,
 
   plugins: [deskTool(), visionTool()],
 
